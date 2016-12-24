@@ -5,7 +5,7 @@
 
 <hr />
 
-<img src="http://blogpictures.oss-cn-shanghai.aliyuncs.com/github/id-query-system.png" height="50%" width="50%"/>
+<img src="http://blogpictures.oss-cn-shanghai.aliyuncs.com/github/id-query-system.png" height="100%" width="100%"/>
 
 <hr />
 
@@ -27,6 +27,7 @@
 <center><strong>已知BUG</strong></center>
 <ol>
 	<li>无法实现中文字段查询</li>
-        <li>欢迎提交</li>
 </ol>
-<hr />
+<hr/>
+<p style="text-align:center;">欢迎提交</p>
+<hr/>
