@@ -5,7 +5,7 @@
 
 <hr />
 
-<img src="http://cuffeer.com/wp-content/uploads/2016/12/img_0022-1.jpg" alt="" width="1366" height="768" />
+<img src="http://cuffeer.com/wp-content/uploads/2016/12/2016122414220121.png"/>
 
 <hr />
 
