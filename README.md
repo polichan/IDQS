@@ -1,4 +1,4 @@
-# ID-Query
+# ID-Query-System
 <hr />
 
 <center><b>项目界面</b></center>
@@ -28,6 +28,4 @@
 <ol>
 	<li>无法实现中文字段查询</li>
 </ol>
-<hr/>
-<p style="text-align:center;">欢迎提交</p>
 <hr/>
