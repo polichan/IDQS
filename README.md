@@ -14,7 +14,7 @@ Be sure to check out the [changelog here] (https://github.com/CallanThorse/IDQS)
 * Basic functions are achieved.
 
 ## Bugs
-* Some problems will arise in Chinese.
+* None.
 
 ## Disclaimer
 ***IDQS is intended to be used for recording my learning logs only, and I do not take any responsibility for the consequences this project made!***
