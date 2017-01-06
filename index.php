@@ -2,36 +2,50 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="./css/uikit.gradient.css">
+<!--New feature (notify) but there is a  bug --
 <link rel="stylesheet" type="text/css" href="./css/notify.css">
+-->
 <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
-<script type="text/javascript" src="./js/notify.js"></script>
 <script src="./js/uikit.min.js"></script>
 <head>
-	<title>三林中学学籍号查询系统</title>
+	<title>IDQS</title>
 </head>
 <body>
+<!--New feature (notify) but there is a  bug --
+<input type="button" onclick="test()" value="TEST">
+-->
 <div class="index-container uk-animation-scale-down">
 <div class="FirstPart">
-		    <h1 class="title">ID Query System</h1>
+		    <h1 class="title" style="text-align:center;">ID Query System</h1>
 </div>
 <div class="SecondPart">
-<!--创建form-->
+<!--Create Forms-->
     <div name="QueryForm" class="uk-form">
     <fieldset data-uk-margin>
-    <!--添加控件-->
-        <input type="text" name="QueryName" id="QueryName" placeholder="请输入查询学生姓名" class="ui-margin-small-top">
-        <button type="submit" name="submit" value="查询" class="uk-button uk-margin-small" href="#" onclick="query()">查询</button>
+    <!--Add controls-->
+        <input type="text" name="QueryName" id="QueryName" placeholder="Please input a name." class="ui-margin-small-top">
+
+        <button type="submit" name="submit" value="Search" class="uk-button uk-margin-small" href="#" onclick="query()">Search</button>
     </fieldset>
 	</div>
 		<div id="result"></div>
 </div>
 </div>
-<!--引入粒子效果-->
+<!--include particle-js effect -->
 <div id="particles-js">
 </div>
-<!--引入粒子JS-->
+<!--JavaScript-->
 <script src="./js/particles.js"></script>
 <script src="./js/app.js"></script>
+<!--New feature (notify) but there is a bug --
+<script type="text/javascript" src="./js/notify.js"></script>
+<script type="text/javascript">
+function test(){
+	UIkit.notify("<i class='uk-icon-check'></i>Please enter a name ! ");
+	}
+		</script>
+-->
+<!-- AJAX -->
 <script>
 function query() { $.ajax({
 	type:"post",

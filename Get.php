@@ -1,21 +1,21 @@
 <?php
-error_reporting(E_ALL || ~E_NOTICE);//忽略警告
+error_reporting(E_ALL || ~E_NOTICE);//Miss errors.
 if (!isset($_POST['QueryName'])){
-	exit('请勿非法访问！');
+	exit('Unauthorized Access!');
 }
-$name = htmlspecialchars($_POST['QueryName']);//将前端数据以“POST‘形式传入‘name'变量
+$name = htmlspecialchars($_POST['QueryName']);//Post 'name' from text which user entered.
 if ($name=='') {
-		exit('请输入学生姓名！');
+	exit("Please enter a name !");
 }
-include('mysql_con.php'); //数据库连接信息分开写
+include('mysql_con.php'); //include mysql_con information.
 $sql  = 'SELECT *  FROM `info` WHERE `name` = \''.$name.'\'';
-$result = mysqli_fetch_array(mysqli_query($con, $sql)); //将对比后的结果赋值给变量 'result'
-$number = $result['number']; //将数组中下标为 number 的数据赋值给变量 ‘number'
+$result = mysqli_fetch_array(mysqli_query($con, $sql)); //compare and assign.
+$number = $result['number']; // assign data to number.
 
 if (!isset($number)) {
-	echo "抱歉，系统没有查询到「".$name."」的学籍号，请重新输入。";
+	echo "Sorry，ID of「".$name."」can'be searched from database,please recheck!";
 } else {
-	echo "您查询的学生「".$name."」的学籍号为：".$number."。";
+	echo "ID of 「".$name."」is : ".$number.".";
 }
-mysqli_close($con);//关闭数据库连接
+mysqli_close($con);//close mysql connection.
 ?>

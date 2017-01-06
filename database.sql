@@ -4,7 +4,7 @@
 --
 -- Host: localhost
 -- Generation Time: 2017-01-06 14:28:30
--- 服务器版本： 5.7.15
+-- version： 5.7.15
 -- PHP Version: 7.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
