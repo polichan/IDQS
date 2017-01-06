@@ -1,15 +1,13 @@
-<p align="center">ID-Query-System</p>
-<ol>
-	<li>采用<i>UiKit</i>自适应框架</li>
-	<li>加入<i>GitHub</i>开源Canvas效果</li>
-</ol>
-## 更新日志
-#### Update_log_V1.0.1
-1. 页面编码设置为UTF-8
-2. 增强安全性
-#### Update_log_V1.0
-1. Mysql查询实现
-2. 页面输出查询结果
-<hr>
-#### 已知BUGs
-1. 无法实现中文字段查询
+#IDQS
+1. This PHP project was using UIKIT (Framework)
+## :scroll: Changelog
+IDQS gets weekly updates with new features, improvements and bugfixes.
+## Update_logs_v1.0.1
+1. Support the UTF-8 character set ( page encoding).
+2. Improve security./ - 06/1/2017
+## Update_logs_v1.0
+1. Basic functions are achieved
+## Bugs
+1. Some problems will arise in Chinese
+## Disclaimer
+***IDQS is intended to be used for recording my learning logs only, and I do not take any responsibility for the consequences this project made!
