@@ -1,5 +1,6 @@
-#IDQS
-1. This PHP project was using UIKIT (Framework)
+<p align="center"><img src="http://blogpictures.oss-cn-shanghai.aliyuncs.com/github/id-query-system.png" /></p>
+#IDQS was the FIRST PHP PROJECT which i programed.
+1. UIKIT used in the IDQS.
 
 ## :scroll: Changelog
 IDQS gets weekly updates with new features, improvements and bugfixes.
@@ -15,4 +16,4 @@ IDQS gets weekly updates with new features, improvements and bugfixes.
 1. Some problems will arise in Chinese.
 
 ## Disclaimer
-***IDQS is intended to be used for recording my learning logs only, and I do not take any responsibility for the consequences this project made!
+***IDQS is intended to be used for recording my learning logs only, and I do not take any responsibility for the consequences this project made!***
