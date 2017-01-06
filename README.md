@@ -1,11 +1,7 @@
 # ID-Query-System
 <hr />
 
-<center><b>项目界面</b></center>
-
-<hr />
-
-<img src="http://blogpictures.oss-cn-shanghai.aliyuncs.com/github/id-query-system.png" height="100%" width="100%"/>
+<center><b>项目</b></center>
 
 <hr />
 
@@ -15,7 +11,12 @@
 </ol>
 
 <hr />
-
+<center><em><i>New!</i>更新log_V1.0.1</em></center>
+<ol>
+	<li>页面编码设置为UTF-8</li>
+	<li>增强安全性</li>
+</ol>
+<hr>
 <center><em>更新log_V1.0</em></center>
 <ol>
 	<li><i>Mysql</i>查询实现√</li>
