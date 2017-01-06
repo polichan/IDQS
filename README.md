@@ -4,6 +4,7 @@
 
 ## :scroll: Changelog
 IDQS gets weekly updates with new features, improvements and bugfixes.
+Be sure to check out the [changelog here] (https://github.com/CallanThorse/IDQS).
 
 ## Update_logs_v1.0.1
 * Support the UTF-8 character set ( page encoding).
