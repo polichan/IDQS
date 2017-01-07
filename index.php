@@ -38,7 +38,7 @@
    </div> 
    <div> 
     <p class="uk-article-meta uk-text-center bottom-text uk-text-nowrap">Developed in January 7th,2017 by CallanThorse | Source Code: <a href="https://github.com/CallanThorse/IDQS" target="_blank">Github</a></p> 
-    <!--in Chinese--
+    <!--in Chinese
 	<p class="uk-article-meta uk-text-center bottom-text uk-text-nowrap">由 史瑞斯 完成于 2017年1月7日 | 开源在 <a href="https://github.com/CallanThorse/IDQS" target="_blank">Github</a></p>
 	--> 
    </div> 
