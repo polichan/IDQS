@@ -23,7 +23,7 @@ Be sure to check out the [changelog here] (https://github.com/CallanThorse/IDQS)
 *  Basic functions are achieved.
 
 ## Bugs
-\~\~1. Div position can't be controlled.\~\~
+~~1. Div position can't be controlled.~~
 
 ## Disclaimer
 ***IDQS is intended to be used for recording my learning logs only, and I do not take any responsibility for the consequences this project made!***
