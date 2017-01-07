@@ -1,4 +1,4 @@
-![image](https://raw.githubusercontent.com/0xJacky/Snow3/master/screenshots/snow3index.png)
+![image](https://raw.githubusercontent.com/CallanThorse/IDQS/master/screenshot.png)
 
 # IDQS is the future.
 1. UIKIT USED.
