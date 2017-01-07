@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="./css/uikit.gradient.css">
-<!--New feature (notify) but there is a  bug --
-<link rel="stylesheet" type="text/css" href="./css/notify.css">
--->
-<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
-<script src="./js/uikit.min.js"></script>
-<head>
-	<title>IDQS</title>
-</head>
-<body>
-<!--New feature (notify) but there is a  bug --
-<input type="button" onclick="test()" value="TEST">
--->
-<div class="index-container uk-animation-scale-down">
-<div class="FirstPart">
-		    <h1 class="title" style="text-align:center;">ID Query System</h1>
-</div>
-<div class="SecondPart">
-<!--Create Forms-->
-    <div name="QueryForm" class="uk-form">
-    <fieldset data-uk-margin>
-    <!--Add controls-->
-        <input type="text" name="QueryName" id="QueryName" placeholder="Please input a name." class="ui-margin-small-top">
-
-        <button type="submit" name="submit" value="Search" class="uk-button uk-margin-small" href="#" onclick="query()">Search</button>
-    </fieldset>
-	</div>
-		<div id="result"></div>
-</div>
-</div>
-<!--include particle-js effect -->
-<div id="particles-js">
-</div>
-<!--JavaScript-->
-<script src="./js/particles.js"></script>
-<script src="./js/app.js"></script>
-<!--New feature (notify) but there is a bug --
-<script type="text/javascript" src="./js/notify.js"></script>
-<script type="text/javascript">
-function test(){
-	UIkit.notify("<i class='uk-icon-check'></i>Please enter a name ! ");
-	}
-		</script>
--->
-<!-- AJAX -->
-<script>
+ <head>
+  <meta charset="utf-8" />  
+  <title>
+		IDQS
+	</title> 
+  <link rel="stylesheet" type="text/css" href="./css/uikit.css" /> 
+  <link rel="stylesheet" type="text/css" href="./css/uikit.gradient.css" /> 
+  <link rel="stylesheet" type="text/css" href="./css/style.css" /> 
+  <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script> 
+  <script type="text/javascript" src="./js/uikit.min.js"></script> 
+  <script type="text/javascript" src="./js/notify.js"></script> 
+ </head> 
+ <body> 
+  <!--Main Controller--> 
+  <div class="index-main-body uk-animation-scale-down"> 
+   <div class="header-text"> 
+    <h1 class="uk-text-center uk-text-nowrap">IDQS</h1> 
+    <h2 class="uk-text-center subtitle uk-text-nowrap">IDENTITY-QUERY-SYSTEM</h2> 
+   </div> 
+   <!--ajax shows--> 
+   <div id="result" class="get-result uk-text-nowrap uk-text-center"> 
+   </div> 
+   <!--ajax shows end--> 
+   <!--Functions Controller--> 
+   <div class="main-ui"> 
+    <div name="QueryForm" class="uk-form"> 
+     <!-- Input text --> 
+     <fieldset class="parent-element"> 
+      <input type="text" name="QueryName" id="QueryName" placeholder="Please input a name." class="input-name" /> 
+     </fieldset> 
+     <!-- Input button --> 
+     <div class="button-ui"> 
+      <button type="submit" name="submit" value="Search" class=" search-button" href="#" onclick="query()">Search</button> 
+     </div> 
+    </div> 
+   </div> 
+   <div> 
+    <p class="uk-article-meta uk-text-center bottom-text uk-text-nowrap">Developed in January 7th,2017 by CallanThorse | Source Code: <a href="https://github.com/CallanThorse/IDQS" target="_blank">Github</a></p> 
+    <!--in Chinese--
+	<p class="uk-article-meta uk-text-center bottom-text uk-text-nowrap">由 史瑞斯 完成于 2017年1月7日 | 开源在 <a href="https://github.com/CallanThorse/IDQS" target="_blank">Github</a></p>
+	--> 
+   </div> 
+  </div> 
+  <!--Particles--> 
+  <div id="particles-js"></div> 
+  <script type="text/javascript" src="./js/particles.js"></script> 
+  <script type="text/javascript" src="./js/app.js"></script> 
+  <!--AJAX--> 
+  <script>
 function query() { $.ajax({
 	type:"post",
 	url:"Get.php",
@@ -57,6 +59,7 @@ function query() { $.ajax({
 	error:function(XMLHttpRequest, textStatus, thrownError){}
 })
 }
-</script>
-</body>
+</script> 
+  <!--AJAX end.-->   
+ </body>
 </html>
