@@ -3,11 +3,15 @@ error_reporting(E_ALL || ~ E_NOTICE); //Miss errors.
 if (!isset($_POST['QueryName'])) {
 	exit('Unauthorized Access!');
 }
-$name = htmlspecialchars($_POST['QueryName']); //Post 'name' from text which user entered.
+$name =($_POST['QueryName']); //Post 'name' from text which user entered.
+ //XSS Protection 
+include ('XSSProtection.php');
+$name = RemoveXSS($name);
+$name = htmlspecialchars($name);
 if ($name == '') {
 	exit("Please enter a name !");
 }
-include ('mysql_con.php'); //include mysql_con information.
+include ('mysql_con.php'); // After checking the $name,start to connect MYSQL.
 $sql = 'SELECT *  FROM `info` WHERE `name` = \'' . $name . '\'';
 $result = mysqli_fetch_array(mysqli_query($con, $sql)); //compare and assign.
 $number = $result['number']; // assign data to number.
