@@ -7,6 +7,9 @@
 IDQS gets weekly updates with new features, improvements and bugfixes.
 Be sure to check out the [changelog here] (https://github.com/CallanThorse/IDQS).
 
+## Update\_logs\_v2.1
+* XSS Protection - 11/03/2017
+
 ## Update\_logs\_v2.0
 * Redesign UI interface.
 * Fix bugs. - 07/01/2017
