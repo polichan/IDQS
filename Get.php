@@ -1,26 +1,50 @@
 <?php
+include ('mysql_con.php');
+include ('function/encrypt.php');
+include ('function/check.php');
+include ('function/XSSProtection.php');
 error_reporting(E_ALL || ~ E_NOTICE); //Miss errors.
+
 if (!isset($_POST['QueryName'])) {
 	exit('Unauthorized Access!');
 }
+
 $name =($_POST['QueryName']); //Post 'name' from text which user entered.
- //XSS Protection
-include ('XSSProtection.php');
-$name = RemoveXSS($name);
+$name = RemoveXSS($name);//防止XSS注入
 $name = htmlspecialchars($name);
-if ($name == '') {
-	exit ("请填写姓名字段!");
+if ($name == '') {//判断名字是否为空
+	echo '<th scope="row" >注意</th>
+				<td>查询失败，姓名为空</td>
+	      <td>查询失败，姓名为空</td>
+				<td>查询失败，姓名为空</td>';
+	exit;
+}else if (!isAllChinese($name)) {//如果不为空则判断是不是中文
+	echo '<th scope="row" >注意</th>
+				<td>请输入中文姓名</td>
+				<td>请输入中文姓名</td>
+				<td>请输入中文姓名</td>';
+	exit;
 }
-include ('mysql_con.php'); // After checking the $name,start to connect MYSQL.
-$sql = "SELECT *  FROM `sldata` WHERE `name` = '$name'";
-$result = mysqli_fetch_array(mysqli_query($con, $sql)); //compare and assign.
-$id = $result['id']; // assign data to number.
-echo $id;
-if (!isset($id)) {
-	echo ("恭喜你，你的账号信息并没有被泄漏。");
-} else {
-	//echo ("ID of 「" . $name . "」is : " . $number . ".");
-	echo "你的个人信息已经泄漏！姓名为：「" . $name . "」，身份证号：「" . $name . "」；";
+// 设置编码，防止中文乱码
+mysqli_set_charset($con, "utf8");
+$sql="SELECT * FROM sldata WHERE name = '".$name."'";//SQL语句拼接
+$result = mysqli_query($con,$sql);
+if($row = mysqli_fetch_array($result))
+{
+	$id = $row['id'];//去除数组中的身份证号
+	$add = $row['address'];
+	//相关数据脱敏
+	$idcard = func_substr_replace($id);
+	$address = func_substr_replace($add,$replacement = '*', $start =5, $length = 10);
+	echo '<th scope="row" >1</th>';
+	echo "<td>" . $row['name']."</td>";
+  echo "<td>".$idcard."</td>";
+	echo "<td>".$address."</td>";
+}else{
+	echo '<th scope="row" >恭喜你</th>
+				<td>未查询到相关记录</td>
+				<td>未查询到相关记录</td>
+				<td>未查询到相关记录</td>';
 }
 mysqli_close($con); //close mysql connection.
 ?>

@@ -25,7 +25,7 @@
               &nbsp公告</h3>
           </div>
           <div class="panel-body">
-            经本人于2019年02月02日挖掘发现，上海市三林中学某旁站存在 SQL 注入漏洞；且种种迹象表面服务器于2011年已被入侵植入木马，因此强烈怀疑大量教职工及学生信息已经遭到泄漏，所以开发此个人信息泄漏查询系统。以警醒各位。
+            在这里填写内容，用来展示公告。
           </div>
         </div>
 
@@ -35,16 +35,39 @@
             <input type="text" class="form-control" placeholder="请输入待查询姓名" aria-describedby="basic-addon1" required="" autofocus="" id="QueryName">
           </div>
           <!--ajax shows-->
-          <div  class="panel panel-default panel-top">
-            <div id="result" class="panel-body">
-              <span class="glyphicon glyphicon glyphicon-minus-sign" aria-hidden="true"></span>
-              等待查询中...
-            </div>
-          </div>
+          <div class="checkbox"><!-- user checkbox to make padding -->
+        </div>
+              <div  class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">查询结果</div>
+                    <div class="panel-body">
+                      <p>查询结果将在以下列表中展现 :)</p>
+                    </div>
+
+                    <!-- Table -->
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>姓名</th>
+                          <th>身份证号</th>
+                          <th>家庭地址</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr id="result">
+                          <th scope="row" >1</th>
+                          <td>等待查询</td>
+                          <td>等待查询</td>
+                          <td>等待查询</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
 
           <div class="checkbox"><!-- user checkbox to make padding -->
         </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit" onclick="query()" href="#" >开始查询</button>
+          <button class="btn btn-lg btn-primary btn-block" name="submit" onclick="query()" href="#" type="button">开始查询</button>
         </form>
 
         <div class="panel panel-default panel-top">
@@ -53,16 +76,15 @@
             开发人：陈鹏宇
           </div>
           <div class="panel-footer">
-            Developed on Feb.4th | Current Version: 0.0.1 STABLE
+            Developed on Feb.4th | Current Version: 2.0 STABLE
           </div>
         </div>
-      </div>
-      <div>
       </div>
       <!-- AJAX JS-->
       <script>
     function query() { $.ajax({
       type:"post",
+      async:false,
       url:"Get.php",
       data:'QueryName='+$('#QueryName').val(),
       success:function(msg){
@@ -72,9 +94,5 @@
     })
     }
     </script>
-<!--Particles-->
-<div id="particles-js"></div>
-<script type="text/javascript" src="./style/js/particles.js"></script>
-<script type="text/javascript" src="./style/js/app.js"></script>
     </body>
   </html>

@@ -1,17 +1,23 @@
+##IDQS
 ![image](https://raw.githubusercontent.com/CallanThorse/IDQS/master/screenshot.png)
 
-# IDQS is the future.
-1. UIKIT USED.
+###简介
+IDQS是一款基于PHP编程语言编写的数据库查询系统，我们提供了优雅的前端界面，防止XSS注入的后端。
 
-## :scroll: Changelog
-IDQS gets weekly updates with new features, improvements and bugfixes.
-Be sure to check out the [changelog here] (https://github.com/CallanThorse/IDQS).
-
-## Update\_logs\_v2.1
-* XSS Protection - 11/03/2017
+##框架声明
+- Bootstrap
 
 ## Update\_logs\_v2.0
-* Redesign UI interface.
+* Redesign UI.
+* Take Bootstrap as a new framework.
+* Abandon UIKit because some reasons.
+* Abandon Particles JavaScript because of lowering performance.
+
+## Update\_logs\_v1.1.2
+* XSS Protection - 11/03/2017
+
+## Update\_logs\_v1.1.1
+* Redesign UI.
 * Fix bugs. - 07/01/2017
 
 ## Update\_logs\_v1.1
@@ -27,6 +33,10 @@ Be sure to check out the [changelog here] (https://github.com/CallanThorse/IDQS)
 
 ## Bugs
 ~~1. Div position can't be controlled.~~
+
+## TODO LIST
+* Added Captcha Function
+
 
 ## Disclaimer
 ***IDQS is intended to be used for recording my learning logs only, and I do not take any responsibility for the consequences this project made!***
