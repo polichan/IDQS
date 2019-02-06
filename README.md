@@ -36,8 +36,8 @@ IDQS是一款基于PHP编程语言编写的数据库查询系统，我们提供�
 *  Basic functions are achieved.
 
 ## Bugs
-~~1. Div position can't be controlled.~~
-~~2. Fixed bug where duplicate names could not be displayed at the same time.~~~
+~~Div position can't be controlled.~~  
+~~Fixed bug where duplicate names could not be displayed at the same time.~~
 
 ## TODO LIST
 * Added Captcha Function
