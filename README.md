@@ -7,6 +7,10 @@ IDQS是一款基于PHP编程语言编写的数据库查询系统，我们提供�
 ## 框架声明
 - Bootstrap
 
+## Update\_logs\_v2.0.1
+* Optimize Datebase.
+* Fix bugs.
+
 ## Update\_logs\_v2.0
 * Redesign UI.
 * Take Bootstrap as a new framework.
