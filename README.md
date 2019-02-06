@@ -1,10 +1,10 @@
-##IDQS
-![image](https://raw.githubusercontent.com/CallanThorse/IDQS/master/screenshot.png)
+## IDQS
+![image](https://raw.githubusercontent.com/polichan/IDQS/master/screenshot.png)
 
-###简介
+### 简介
 IDQS是一款基于PHP编程语言编写的数据库查询系统，我们提供了优雅的前端界面，防止XSS注入的后端。
 
-##框架声明
+## 框架声明
 - Bootstrap
 
 ## Update\_logs\_v2.0
