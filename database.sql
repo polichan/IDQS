@@ -27,8 +27,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `info` (
-  `number` int(11) NOT NULL,
-  `name` varchar(32) NOT NULL
+  `address` varchar(50) NOT NULL,
+  `name` varchar(10) NOT NULL,
+  `id` varchar(20) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -39,7 +40,7 @@ CREATE TABLE `info` (
 -- Indexes for table `info`
 --
 ALTER TABLE `info`
-  ADD PRIMARY KEY (`number`);
+  ADD PRIMARY KEY (`name`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
